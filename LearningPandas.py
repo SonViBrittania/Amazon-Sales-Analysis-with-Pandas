@@ -33,10 +33,9 @@ plt.show()
 small_df = small_df.reset_index(drop=True)
 small_df.index = range(1, len(small_df)+1)
 
-print(small_df)
-print(small_df["discount_percentage"].corr(small_df["rating"]))
-
-
+small_df = small_df.reset_index(drop=True)
+small_df.index = range(1, len(small_df)+1)
 
 #This shows the correlation between rating an discount percentage
+print(small_df["discount_percentage"].corr(small_df["rating"]))
 
